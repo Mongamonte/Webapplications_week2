@@ -39,14 +39,16 @@ function runCode() {
     const Emoji = document.getElementById("emoji");
     const text = Emoji.options[Emoji.selectedIndex].text;
     const div = document.createElement("div");
-    const CommentRating = document.createTextNode(text);
-    div.appendChild(CommentRating);
+    const div_emoji = document.createTextNode(text);
+    div.appendChild(div_emoji);
     document.getElementById("kommentit").appendChild(CommentRating);
 
     const Feedback = document.getElementById("feedback").value;
     const div2 = document.createElement("div");
-    const CommentText = document.createTextNode(Feedback);
-    div2.appendChild(CommentText);
-    document.getElementById("kommentit").appendChild(CommentText);
+    const y_text = document.createTextNode(Feedback);
+    div2.appendChild(y_text);
+
+    document.getElementById("kommentit").appendChild(div);
+    document.getElementById("kommentit").appendChild(div2);
   });
 }
