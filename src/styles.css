@@ -34,15 +34,11 @@ body {
 
 .menu-layout {
   text-align: center;
-  max-width: 720px;
+  max-width: 740px;
   margin: auto;
 }
 
 .rate {
   height: 30px;
   width: 50px;
-}
-
-#checkbox {
-  visibility: hidden;
 }
