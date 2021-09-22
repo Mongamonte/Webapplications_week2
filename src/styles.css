@@ -6,6 +6,12 @@ body {
   font-style: italic;
 }
 
+.menu-layout {
+  text-align: left;
+  max-width: 740px;
+  margin: auto;
+}
+
 #menu-table tr:nth-child(even) {
   background: gainsboro;
 }
@@ -30,12 +36,6 @@ body {
 #menu-table {
   margin: auto;
   width: 100%;
-}
-
-.menu-layout {
-  text-align: center;
-  max-width: 740px;
-  margin: auto;
 }
 
 .rate {
