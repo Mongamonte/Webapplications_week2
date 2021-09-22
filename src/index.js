@@ -45,8 +45,8 @@ function runCode() {
 
     const Feedback = document.getElementById("feedback").value;
     const div2 = document.createElement("div");
-    const commenttext = document.createTextNode(Feedback);
-    div2.appendChild(commenttext);
-    document.getElementById("kommentit").appendChild(commenttext);
+    const CommentText = document.createTextNode(Feedback);
+    div2.appendChild(CommentText);
+    document.getElementById("kommentit").appendChild(CommentText);
   });
 }
