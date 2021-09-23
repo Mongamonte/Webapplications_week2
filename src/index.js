@@ -20,6 +20,11 @@ function runCode() {
     let NewComment = document.createElement("LI");
     NewComment.innerHTML = UserInput;
     const CommentArea = document.getElementById("comment-area");
+
+    var x = document.createElement("input");
+    x.setAttribute("type", "checkbox");
+
+    CommentArea.appendChild(x);
     CommentArea.appendChild(NewComment);
 
     document.getElementById("text-area").value = "";
@@ -41,12 +46,12 @@ function runCode() {
     const div = document.createElement("div");
     const div_emoji = document.createTextNode(text);
     div.appendChild(div_emoji);
-    document.getElementById("happyface").appendChild(div_emoji);
+    document.getElementById("kommentit").appendChild(div_emoji);
 
     const Feedback = document.getElementById("feedback").value;
     const div2 = document.createElement("div");
     const y_text = document.createTextNode(Feedback);
     div2.appendChild(y_text);
-    document.getElementById("textinput").appendChild(div2);
+    document.getElementById("kommentit").appendChild(div2);
   });
 }
