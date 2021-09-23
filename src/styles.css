@@ -9,27 +9,26 @@ body {
   max-width: 740px;
   margin: auto;
 }
-#menu-table tr:nth-child(even) {
+#menu-table tr:nth-child(odd) {
   background: gainsboro;
 }
-#menu-table td {
-  background-color: #f2f2f2;
-}
+
 #menu-table th {
   padding-top: 6px;
   padding-bottom: 6px;
-  text-align: center;
   background-color: purple;
   color: white;
 }
-#menu-table tr {
+
+#menu-table {
+  background-color: #f2f2f2;
+  text-align: left;
   text-align: center;
   color: black;
-}
-#menu-table {
   margin: auto;
   width: 100%;
 }
+
 .rate {
   height: 30px;
   width: 50px;
