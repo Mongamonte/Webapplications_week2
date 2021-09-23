@@ -38,18 +38,18 @@ function runCode() {
   review.addEventListener("click", function () {
     const Emoji = document.getElementById("emoji");
     const text = Emoji.options[Emoji.selectedIndex].text;
-    const value = Emoji.options[Emoji.selectedIndex].value;
 
     const div1 = document.createElement("div");
-    const div2 = document.createElement("div");
-
     const div_emoji = document.createTextNode(text);
-    const div_value = document.createTextNode(value);
 
     div1.appendChild(div_emoji);
-    div2.appendChild(div_value);
-
     document.getElementById("comment-rating").appendChild(div_emoji);
-    document.getElementById("comment-text").appendChild(div_value);
+
+    const Teksti = document.getElementById("kommentti").value;
+    const div2 = document.createElement("div");
+    const div_teksti = document.createTextNode(Teksti);
+
+    div2.appendChild(div_teksti);
+    document.getElementById("comment-text").appendChild(div_teksti);
   });
 }
