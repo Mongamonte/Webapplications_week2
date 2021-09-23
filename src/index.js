@@ -42,13 +42,13 @@ function runCode() {
     const div_emoji = document.createTextNode(text);
 
     div.appendChild(div_emoji);
-    document.getElementById("kommentit").appendChild(div_emoji);
+    document.getElementById("happyface").appendChild(div_emoji);
 
     const Feedback = document.getElementById("comment").value;
     const div2 = document.createElement("div");
     const y_text = document.createTextNode(Feedback);
 
     div2.appendChild(y_text);
-    document.getElementById("kommentit").appendChild(div2);
+    document.getElementById("textinput").appendChild(div2);
   });
 }
