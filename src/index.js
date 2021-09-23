@@ -34,21 +34,22 @@ function runCode() {
     }
   });
 
-  const form = document.getElementById("formi");
-  form.addEventListener("submit", function () {
+  const review = document.getElementById("submit");
+  review.addEventListener("click", function () {
     const Emoji = document.getElementById("emoji");
     const text = Emoji.options[Emoji.selectedIndex].text;
-    const div = document.createElement("div");
-    const div_emoji = document.createTextNode(text);
+    const value = Emoji.options[Emoji.selectedIndex].value;
 
-    div.appendChild(div_emoji);
-    document.getElementById("happyface").appendChild(div_emoji);
-
-    const Feedback = document.getElementById("comment").value;
+    const div1 = document.createElement("div");
     const div2 = document.createElement("div");
-    const y_text = document.createTextNode(Feedback);
 
-    div2.appendChild(y_text);
-    document.getElementById("textinput").appendChild(div2);
+    const div_emoji = document.createTextNode(text);
+    const div_value = document.createTextNode(value);
+
+    div1.appendChild(div_emoji);
+    div2.appendChild(div_value);
+
+    document.getElementById("comment-rating").appendChild(div_emoji);
+    document.getElementById("comment-text").appendChild(div_value);
   });
 }

@@ -75,25 +75,20 @@
 	<h4>Please rate your experience about the restaurant:</h4>
 
 
-	<form id="formi">
-		<select id= "emoji" class="emoji">
-				<option value="1" >Very Good</option>
-				<option value="2" selected>Good</option>
-				<option value="3" >Bad</option>
-				<option value="4" >Terrible</option>
-			</select>		
-			<br>
-		<label for="comment"></label><br>
-		<input type="text" id="comment" name="comment" value=""><br>
-		<br>
-		<input type="submit" value="Submit">
-	</form> 
+	<select id= "emoji" class="emoji">
+			<option value="1" >&#128525;</option>
+			<option value="2" selected>&#128578;</option>
+			<option value="3" >&#128580;</option>
+			<option value="4" >&#129326;</option>
+		</select>		
+		<br><br>
+		<button id="submit">Review!</button>
 
 	<br><br>
 
 	<div id="kommentit" class="comment"> 
-		<span id="happyface" class="comment-rating"></span>
-		<span id="textinput" class="comment-text"></span>		
+		<span id="comment-rating" class="comment-rating"></span>
+		<span id="comment-text" class="comment-text"></span>		
 	</div>
 
 		<script src="src/index.js"></script>

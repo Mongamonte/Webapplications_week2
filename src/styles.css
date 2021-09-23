@@ -29,11 +29,10 @@ body {
   width: 100%;
 }
 
-#comment {
+#emoji {
   background-color: lightslategrey;
-  text-align: left;
-  color: white;
-  width: 300px;
-  height: 100px;
+  text-align: center;
+  width: 60px;
+  height: 40px;
   font-size: 15px;
 }
