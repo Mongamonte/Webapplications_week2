@@ -28,10 +28,12 @@ body {
   margin: auto;
   width: 100%;
 }
-.rate {
-  height: 30px;
-  width: 50px;
-}
 
-.x {
+#comment {
+  background-color: lightslategrey;
+  text-align: left;
+  color: white;
+  width: 300px;
+  height: 100px;
+  font-size: 15px;
 }

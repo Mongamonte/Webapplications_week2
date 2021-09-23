@@ -73,17 +73,21 @@
 	<br><br>
 	
 	<h4>Please rate your experience about the restaurant:</h4>
-	<select id= "emoji" class="emoji">
-		<option value="1" >&#128525;</option>
-		<option value="2" selected>&#127773;</option>
-		<option value="3" >&#128528;</option>
-		<option value="4" >&#129326;</option>
-	</select>
-		
-	<textarea id="feedback" class="feedback" rows="5" cols="60" onfocus="this.value=''">
-			Type your comment here... </textarea>
 
-	<button id="submit">Submit</button>
+
+	<form id="formi">
+		<select id= "emoji" class="emoji">
+				<option value="1" >&#128525;</option>
+				<option value="2" selected>&#127773;</option>
+				<option value="3" >&#128528;</option>
+				<option value="4" >&#129326;</option>
+			</select>		
+			<br>
+		<label for="comment"></label><br>
+		<input type="text" id="comment" name="comment" value=""><br>
+		<br>
+		<input type="submit" value="Submit">
+	</form> 
 
 	<br><br>
 
