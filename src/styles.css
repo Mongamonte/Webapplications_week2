@@ -9,8 +9,11 @@ body {
   max-width: 740px;
   margin: auto;
 }
-#menu-table tr:nth-child(odd) {
+#menu-table tr:nth-child(even) {
   background: gainsboro;
+}
+#menu-table td {
+  background-color: #f2f2f2;
 }
 
 #menu-table th {
@@ -21,14 +24,10 @@ body {
 }
 
 #menu-table {
-  background-color: #f2f2f2;
   text-align: left;
-  text-align: center;
-  color: black;
   margin: auto;
   width: 100%;
 }
-
 .rate {
   height: 30px;
   width: 50px;
